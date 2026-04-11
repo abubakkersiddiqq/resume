@@ -1,104 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Abubakker Siddiq - Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abubakker Siddiq — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+  <div class="scanline"></div>
 
+  <div class="container">
+
+    <!-- HEADER -->
     <header>
-        <h1>ABUBAKKER SIDDIQ</h1>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/abubakker-siddiq-715759231" target="_blank">LinkedIn</a>
-            <a href="https://github.com/abubakkersiddiqq" target="_blank">GitHub</a>
-            <a href="mailto:abubakkerconnect@gmail.com">Email</a>
+      <div class="header-prompt">
+        <span class="prompt-symbol">❯</span>
+        <span class="prompt-cmd">cat /resume/abubakker-siddiq.json</span>
+      </div>
+      <div class="header-main">
+        <h1>Abubakker<br><span class="name-accent">Siddiq</span></h1>
+        <div class="header-meta">
+          <div class="status-row">
+            <span class="status-dot"></span>
+            <span class="status-text">Open to opportunities</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">role</span>
+            <span class="meta-value">Python Backend Engineer</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">focus</span>
+            <span class="meta-value">AI-integrated APIs</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">location</span>
+            <span class="meta-value">Bengaluru, KA</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">phone</span>
+            <span class="meta-value">+91 96776 54174</span>
+          </div>
         </div>
+      </div>
+      <div class="header-links">
+        <a href="mailto:abubakkerconnect@gmail.com" class="link-pill">
+          <span class="link-icon">✉</span> abubakkerconnect@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/abubakker-siddiq-715759231" target="_blank" class="link-pill">
+          <span class="link-icon">in</span> LinkedIn
+        </a>
+        <a href="https://github.com/abubakkersiddiqq" target="_blank" class="link-pill">
+          <span class="link-icon">gh</span> GitHub
+        </a>
+      </div>
     </header>
 
-    <section>
-        <h2>Professional Summary</h2>
-        <p>
-            Backend-focused Python developer building real-world applications using Flask, APIs, and local LLM integration.
-            Experience in semantic search systems, vector databases, and structured backend architecture.
+    <!-- SUMMARY -->
+    <section class="section">
+      <div class="section-label">
+        <span class="prompt-symbol">❯</span> summary
+      </div>
+      <div class="section-body">
+        <p class="summary-text">
+          Python backend engineer with production AI integration experience: shipped an LLM-powered tool for a real client using Go and OpenRouter, built and deployed a layered FastAPI + PostgreSQL REST API, and implemented a full RAG pipeline with PDF ingestion, vector embeddings, and LLM-generated answers. Comfortable owning architecture, implementation, containerization, and deployment independently.
         </p>
+      </div>
     </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <ul class="skills">
-            <li><b>Programming:</b> Python, R, JavaScript, C (Basics)</li>
-            <li><b>Backend:</b> Flask, FastAPI (Basics), REST APIs, Jinja2</li>
-            <li><b>AI / NLP:</b> SentenceTransformers, ChromaDB, NLTK, Ollama</li>
-            <li><b>Databases:</b> PostgreSQL, SQLite, SQLAlchemy</li>
-            <li><b>Data:</b> Pandas, NumPy, JSON</li>
-            <li><b>Tools:</b> Git, GitHub, VS Code, Jupyter</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Project Experience</h2>
-
-        <div class="project">
-            <div class="project-header">
-                <div>
-                    <h3>Real-Time Crypto Order Book Web App</h3>
-                    <span class="tech">Python, Flask, JavaScript, REST API, Render</span>
-                </div>
-                <span class="date">2025</span>
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <div class="section-label">
+        <span class="prompt-symbol">❯</span> experience
+      </div>
+      <div class="section-body">
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title-block">
+              <h3 class="entry-title">Backend / Full-Stack Intern</h3>
+              <span class="entry-org">Zephyr Technologies &amp; Solutions Pvt. Ltd.</span>
+              <span class="entry-location">Mangalore, KA</span>
             </div>
-            <ul>
-                <li>Built real-time order book using Binance Depth API.</li>
-                <li>Implemented backend routes for live market data processing.</li>
-                <li>Designed auto-refreshing UI for bid/ask updates.</li>
-                <li>Added structured API error handling.</li>
-            </ul>
+            <span class="entry-date">Jan 2026 – Mar 2026</span>
+          </div>
+          <ul class="entry-list">
+            <li>Delivered a production task-management application end-to-end in 3 months: React.js frontend, Node.js + Express backend, MongoDB, JWT authentication, and bcrypt password hashing.</li>
+            <li>Designed and shipped 12 RESTful API endpoints covering auth, task CRUD, and project management — all with input validation and role-protected routes.</li>
+            <li>Cut inter-component data logic by ~40% by migrating prop-drilling to React Context API, improving maintainability across the codebase.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+      <div class="section-label">
+        <span class="prompt-symbol">❯</span> ls -la ~/projects/
+      </div>
+      <div class="section-body projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div>
+              <h3 class="project-name">bino</h3>
+              <span class="project-subtitle">LLM Query Tool</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abubakkersiddiqq/bino_smart_query_helper" target="_blank" class="proj-link">src</a>
+              <a href="https://bino-smart-query-helper.onrender.com" target="_blank" class="proj-link live">live ↗</a>
+            </div>
+          </div>
+          <div class="project-stack">Go · LangChainGo · OpenRouter · Llama 3.3 70B · Render</div>
+          <ul class="project-bullets">
+            <li>Built and deployed a production LLM tool for a real client: accepts natural language input and returns 5 AI-generated, hyper-local query suggestions with WhatsApp deep-links.</li>
+            <li>Achieved 100% LLM response reliability using <code>openrouter/free</code> dynamic model selection — eliminating quota failures with zero added infrastructure cost.</li>
+            <li>Self-taught Go and LangChainGo to ship; designed prompt pipeline for structured output, response parser, and hardcoded fallback for graceful degradation.</li>
+          </ul>
         </div>
 
-        <div class="project">
-            <div class="project-header">
-                <div>
-                    <h3>Document Retrieval System</h3>
-                    <span class="tech">Python, SentenceTransformers, ChromaDB</span>
-                </div>
-                <span class="date">2025</span>
+        <div class="project-card">
+          <div class="project-card-header">
+            <div>
+              <h3 class="project-name">blogflow-api</h3>
+              <span class="project-subtitle">Production Blog REST API</span>
             </div>
-            <ul>
-                <li>Built embedding-based semantic search pipeline.</li>
-                <li>Implemented chunking and vector similarity retrieval.</li>
-                <li>Validated search accuracy with structured queries.</li>
-            </ul>
+            <div class="project-links">
+              <a href="https://github.com/abubakkersiddiqq/real-blog" target="_blank" class="proj-link">src</a>
+              <a href="https://real-blog.onrender.com" target="_blank" class="proj-link live">live ↗</a>
+            </div>
+          </div>
+          <div class="project-stack">Python · FastAPI · PostgreSQL · SQLAlchemy · JWT · Docker · Supabase</div>
+          <ul class="project-bullets">
+            <li>Built and deployed a production REST API: async SQLAlchemy + PostgreSQL, JWT with owner-based authorization, Dockerized on Render with 100% uptime via UptimeRobot.</li>
+            <li>Implemented a dual-response system using a custom exception handler that inspects the <code>/api</code> path prefix — serving JSON to API consumers and HTML error pages to browsers from the same routes.</li>
+            <li>Structured across 5 dedicated modules (models, schema, crud, database, routers) enforcing clean separation of concerns throughout the stack.</li>
+          </ul>
         </div>
 
-        <div class="project">
-            <div class="project-header">
-                <div>
-                    <h3>MiniBot – Desktop AI Assistant</h3>
-                    <span class="tech">Python, Tkinter, Ollama, NLP</span>
-                </div>
-                <span class="date">2025</span>
+        <div class="project-card">
+          <div class="project-card-header">
+            <div>
+              <h3 class="project-name">deep-reader</h3>
+              <span class="project-subtitle">Semantic Document Q&A API</span>
             </div>
-            <ul>
-                <li>Developed desktop AI assistant with local LLM integration.</li>
-                <li>Implemented math solving and structured prompt routing.</li>
-                <li>Separated UI, logic layer, and model interaction.</li>
-            </ul>
+            <div class="project-links">
+              <a href="https://github.com/abubakkersiddiqq/deep-reader" target="_blank" class="proj-link">src</a>
+              <a href="https://deepreader.onrender.com" target="_blank" class="proj-link live">live ↗</a>
+            </div>
+          </div>
+          <div class="project-stack">Python · FastAPI · LangChain · ChromaDB · HuggingFace · Docker · Render</div>
+          <ul class="project-bullets">
+            <li>Built and deployed a semantic document Q&A API: accepts PDF uploads, chunks and embeds content with <code>all-MiniLM-L6-v2</code>, stores vectors in ChromaDB, and generates grounded answers via OpenRouter LLM.</li>
+            <li>Implemented repeating header/footer detection using line frequency analysis across pages — automatically removing watermarks and page numbers before chunking to improve embedding quality.</li>
+            <li>Structured with FastAPI lifespan events to load LLM, embeddings, and vectorstore once at startup — eliminating per-request reinitialization and reducing response latency.</li>
+          </ul>
         </div>
 
+      </div>
     </section>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Object-Oriented Programming with Python</li>
-            <li>Introduction to Machine Learning</li>
-            <li>C Programming for Beginners</li>
-        </ul>
+    <!-- SKILLS -->
+    <section class="section">
+      <div class="section-label">
+        <span class="prompt-symbol">❯</span> stack --list
+      </div>
+      <div class="section-body">
+        <div class="skills-table">
+          <div class="skill-row">
+            <span class="skill-key">languages</span>
+            <span class="skill-val">Python &nbsp;·&nbsp; Go &nbsp;·&nbsp; JavaScript</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">AI / ML</span>
+            <span class="skill-val">LLM APIs (OpenRouter) &nbsp;·&nbsp; LangChain &nbsp;·&nbsp; RAG Pipelines &nbsp;·&nbsp; Sentence Transformers &nbsp;·&nbsp; ChromaDB &nbsp;·&nbsp; Vector Embeddings &nbsp;·&nbsp; Prompt Engineering</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">backend</span>
+            <span class="skill-val">FastAPI &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; Express.js &nbsp;·&nbsp; Flask &nbsp;·&nbsp; REST API Design</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">databases</span>
+            <span class="skill-val">PostgreSQL &nbsp;·&nbsp; MongoDB &nbsp;·&nbsp; SQLite &nbsp;·&nbsp; SQLAlchemy (async)</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">devops</span>
+            <span class="skill-val">Docker &nbsp;·&nbsp; Git &nbsp;·&nbsp; Render &nbsp;·&nbsp; Vercel</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-key">tools</span>
+            <span class="skill-val">Postman &nbsp;·&nbsp; Jupyter Notebook &nbsp;·&nbsp; VS Code</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-</div>
+    <!-- EDUCATION -->
+    <section class="section">
+      <div class="section-label">
+        <span class="prompt-symbol">❯</span> education
+      </div>
+      <div class="section-body">
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title-block">
+              <h3 class="entry-title">Bachelor of Computer Applications</h3>
+              <span class="entry-org">East Point College of Higher Education</span>
+              <span class="entry-location">Bengaluru, KA</span>
+            </div>
+            <span class="entry-date">Aug 2023 – Jun 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section">
+      <div class="section-label">
+        <span class="prompt-symbol">❯</span> certifications
+      </div>
+      <div class="section-body">
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            Introduction to Machine Learning — supervised learning fundamentals and model evaluation
+          </div>
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            Object-Oriented Programming with Python — classes, inheritance, encapsulation, and OOP design
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-prompt">❯ _</span>
+    </footer>
+
+  </div>
 
 </body>
 </html>
